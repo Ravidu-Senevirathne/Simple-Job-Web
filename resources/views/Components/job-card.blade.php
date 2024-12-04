@@ -1,8 +1,8 @@
-<div class="p-4 bg-white/5 rounded-xl flex flex-col text-center border border-transparent hover:border-blue-800 group">
+<div class="p-4 bg-white/5 rounded-xl flex flex-col text-center border border-transparent hover:border-blue-800 group transition-colors duration-1000 cursor-pointer">
 
     <div class="self-start text-sm">AgileWave</div>
     <div class="py-8 ">
-        <h3 class="group-hover:text-blue-800 text-xl font-bold">Video Producer</h3>
+        <h3 class="group-hover:text-blue-800 text-xl font-bold transition-colors duration-300">Video Producer</h3>
         <p class="text-sm mt-4">Full Time - From LKR60,000</p>
     </div>
 
