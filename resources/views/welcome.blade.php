@@ -6,7 +6,8 @@
             <h1 class="font-bold text-4xl">Let's Find Your Next Job</h1>
 
             <form action="" class="mt-6">
-                <input type="text" name="" id="" placeholder="Web Developer" class="rounded-xl bg-white/5 border-white/10 px-5 py-4 w-full max-w-xl">
+                <input type="text" name="" id="" placeholder="Web Developer"
+                    class="rounded-xl bg-white/5 border-white/10 px-5 py-4 w-full max-w-xl">
             </form>
         </section>
 
@@ -40,9 +41,9 @@
             <x-section-heading>Recent Jobs</x-section-heading>
 
             <div class="mt-6 space-y-6">
-                <x-job-card-wide/>
-                <x-job-card-wide/>
-                <x-job-card-wide/>
+                <x-job-card-wide />
+                <x-job-card-wide />
+                <x-job-card-wide />
             </div>
 
         </section>
