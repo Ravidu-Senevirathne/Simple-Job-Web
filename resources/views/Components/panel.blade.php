@@ -4,7 +4,7 @@
 @endphp
 
 
-<div {{ $attributes(['class' => '$classes']) }}>
+<div {{ $attributes(['class' => $classes]) }}>
 
     {{ $slot }}
 </div>
