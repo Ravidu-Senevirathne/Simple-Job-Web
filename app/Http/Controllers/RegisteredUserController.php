@@ -36,20 +36,24 @@ class RegisteredUserController extends Controller
             'email' => ['required', 'email', 'unique:users,email'],
             'password' => ['required', 'confirmed', Password::min(6)],
         ]);
-
+    
         $employerAttributes = $request->validate([
             'employer' => ['required'],
             'logo' => ['required', File::types(['png', 'jpg', 'webp'])],
         ]);
+    
         $user = User::create($userAttributes);
-        $logoPath = $request->logo->store('logos');
+    
+        // Store in public disk
+        $logoPath = $request->logo->store('logos', 'public');
+    
         $user->employer()->create([
             'name' => $employerAttributes['employer'],
             'logo' => $logoPath
         ]);
-
+    
         Auth::login($user);
-
+    
         return redirect('/');
     }
 

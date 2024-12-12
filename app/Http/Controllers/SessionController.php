@@ -46,7 +46,7 @@ class SessionController extends Controller
     }
 
     
-    public function destroy(string $id)
+    public function destroy()
     {
         Auth::logout();
 
